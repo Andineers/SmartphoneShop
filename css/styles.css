@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+  }
+
+  body {
+    background-color: #EFF7FA;
+  }
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 150px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+  }
+
+  .name-logo img{
+    align-items: center;
+    margin-left: 60px;
+  }
+
+.menu {
+    display: flex;
+    gap: 40px;
+  }
+
+.menu li {
+    list-style: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.menu li a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: 600px;   
+}
+
+.icons i {
+    font-size: 20px; 
+    margin-left: 15px; 
+    cursor: pointer;
+}
+
+.img-hero {
+    display: grid;
+    grid-template-columns: 1fr 1.9fr; /* Kolom pertama 1fr, kolom kedua 1.5fr untuk membuat hero3 lebih besar */
+    grid-template-rows: repeat(2, 1fr); /* Dua baris dengan tinggi sama */
+    gap: 20px; /* Jarak antara elemen */
+    margin: 0 auto; /* Pusatkan grid di tengah halaman */
+    width: 90%; /* Kontrol lebar keseluruhan kontainer, bisa disesuaikan */
+   
+}
+
+.img-hero .hero1, 
+.img-hero .hero2, 
+.img-hero .hero3 {
+    position: relative;
+    border-radius: 16px; /* Membuat sudut melengkung */
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+}
+
+.img-hero .hero1 {
+    grid-column: 1 / 2; /* Kolom pertama */
+    grid-row: 1 / 2; /* Baris pertama */
+}
+
+.img-hero .hero2 {
+    grid-column: 1 / 2; /* Kolom pertama */
+    grid-row: 2 / 3; /* Baris kedua */
+}
+
+.img-hero .hero3 {
+    grid-column: 2 / 3; /* Kolom kedua */
+    grid-row: 1 / 3; /* Baris pertama sampai kedua */
+    height: 150%; /* Tinggi gambar hero3 diatur lebih besar */
+}
+
+.img-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+    border-radius: 16px; /* Opsional: sudut melengkung */
+}
+
+/* Tambahan untuk memberikan margin kanan dan kiri pada gambar di dalam grid */
+.img-hero .hero1,
+.img-hero .hero2,
+.img-hero .hero3 {
+    margin: 0 10px; /* Memberikan margin kiri dan kanan pada setiap gambar */
+}
+
+.btn-learnMore {
+    position: absolute;
+    bottom: 60px; 
+    left: 600px; 
+}
+
+.btn-learnMore button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-learnMore button:hover {
+    background-color: #0056b3; 
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: #ffff;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /*jarak img ke text*/
+  
+}
+
+.about img {
+    width: 50px;
+    height: auto;
+}
+
+.text h5 {
+    margin: 0;
+    font-size: 14px; /* Ukuran teks untuk h5 */
+    font-weight: bold;
+}
+
+.text p {
+    margin: 0;
+    font-size: 10px; /* Ukuran teks untuk paragraf */
+    color: #555; /* Warna teks */
+}
+
+.custom-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
