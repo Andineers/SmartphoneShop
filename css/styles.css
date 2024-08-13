@@ -163,7 +163,7 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     border: none; /* Remove default border */
     border-radius: 8px; /* Rounded corners */
-    transition: transform 0.2s; /* Smooth transition for hover effect */
+    transition: transform 0.2s; Smooth transition for hover effect
 }
 
 .custom-card:hover {
@@ -299,7 +299,7 @@ h4 {
     gap: 50px;
     background-color: #ffff;
     padding: 20px;
-    width: 100%; 
+    width: auto; 
     box-sizing: border-box; 
 }
 
@@ -311,4 +311,18 @@ h4 {
 .sponsor img {
     width: 50px;
     height: auto;
+}
+.cart {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.cart-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.2s;
 }
