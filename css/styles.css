@@ -130,7 +130,7 @@ nav {
     justify-content: center;
     gap: 100px;
     background-color: #ffff;
-    margin-top: 40px;
+    margin-top: 70px;
     padding: 20px;
 }
 
@@ -175,3 +175,140 @@ nav {
     object-fit: cover;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h4 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image-wrapper {
+    position: relative;
+}
+
+.card-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 30px 50px;
+}
+
+.icon-love {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.icon-love svg {
+    transition: transform 0.2s;
+}
+
+.icon-love svg:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colors .dot {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.btn-buy {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-buy:hover {
+    background-color: #0056b3;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 3px 7px;
+    font-size: 0.75rem;
+    border-radius: 5px;
+}
+
+.advertisement img {
+    width: 100%;
+    height: 100%;
+}
+
+.sponsor {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #ffff;
+    padding: 20px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.sponsor-item {
+    display: flex;
+    align-items: center;
+}
+
+.sponsor img {
+    width: 50px;
+    height: auto;
+}
