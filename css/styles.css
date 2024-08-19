@@ -46,6 +46,7 @@ nav {
     display: flex;
     align-items: center;
     margin-left: 600px;   
+    color: black;
 }
 
 .icons i {
@@ -317,12 +318,118 @@ h4 {
     margin: 0 auto;
 }
 
+.cart {
+    padding: 20px;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000000;
+}
 
 .cart-section {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.cart-item {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 200px;
-    transition: transform 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.cart-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.cart-body {
+    text-align: center;
+    padding: 15px 0;
+}
+
+h6 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.icon-star {
+    margin-bottom: 10px;
+}
+
+.icon-star i {
+    color: #ffd700;
+}
+
+.card-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.old-price {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.timer {
+    font-weight: bold;
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 3px 6px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.iconss {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.iconss i {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+}
+
+.iconss i:hover {
+    color: #007bff;
+}
+
+.product-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.product-slider i {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.product-slider img {
+    width: 50px;
+    height: auto;
 }
