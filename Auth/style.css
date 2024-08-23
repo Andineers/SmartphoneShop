@@ -71,19 +71,116 @@ main {
 
 .col-1 img {
     position: absolute; /* Memungkinkan gambar untuk diposisikan secara absolut dalam .col-1 */
-    bottom: -730px;         
+    bottom: -709px;         
     right: -20px;           /* Menempatkan gambar di sebelah kanan */
     width: 809px;       /* Mengatur lebar gambar menjadi 100px */
     height: auto;       /* Menjaga rasio aspek gambar */
+    z-index: -1;
 }
 
-.login-form {
+.login-container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 500px;
-    border: 3px solid;
-    border-radius: 30px solid ;
-    backdrop-filter: blur(20px )#0B0B0B;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+
+
+.login-form {
+    background: rgba(0, 0, 0, 0.7); /* Transparansi latar belakang hitam */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    color: #fff;
+}
+
+.form-title h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-title p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.input-group i {
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #fff;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-continue {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-continue i {
+    margin-left: 10px;
+}
+
+.or-separator {
+    text-align: center;
+    color: #ccc;
+    margin: 20px 0;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.social-login i {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.register-link {
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: underline;
 }
