@@ -1,11 +1,12 @@
-* {
+body {
     margin: 0;
-    padding: 0;
     font-family: Poppins;
-  }
-
-  body {
-    background-color: #EFF7FA;
+    background: linear-gradient(160deg, #383638 3%, #0b0b0b 39%);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
 
@@ -55,45 +56,29 @@ nav {
     cursor: pointer;
 }
 
-main {
-    min-height: 88vh; /* Untuk mengatur ketinggian konten utama */
-    background: linear-gradient(
-        160deg,       /* Gradien miring pada sudut 135 derajat */
-        #383638 3%,   /* Warna pertama dimulai dari 3% */
-        #0B0B0B 39%   /* Warna kedua dimulai dari 49% */
-    );
-    padding: 20px;
-}
-
-.col-1 {
-    position: relative; /* Untuk memungkinkan penempatan absolut dalam elemen ini */
-}
-
-.col-1 img {
-    position: absolute; /* Memungkinkan gambar untuk diposisikan secara absolut dalam .col-1 */
-    bottom: -709px;         
-    right: -20px;           /* Menempatkan gambar di sebelah kanan */
-    width: 809px;       /* Mengatur lebar gambar menjadi 100px */
-    height: auto;       /* Menjaga rasio aspek gambar */
-    z-index: -1;
-}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Menyisakan ruang untuk footer */
+    margin-left: 500px;
+  }
 
 .login-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
     
 
-
 .login-form {
-    background: rgba(0, 0, 0, 0.7); /* Transparansi latar belakang hitam */
+    background: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
     max-width: 400px;
     width: 100%;
-    color: #fff;
+   
 }
 
 .form-title h4 {
@@ -110,9 +95,10 @@ main {
 
 .input-group {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #444;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
 }
 
 .input-group i {
@@ -184,3 +170,115 @@ main {
     color: #fff;
     text-decoration: underline;
 }
+
+.col-1 {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .col-1 img {
+   
+    bottom: -209px;         
+    right: -98px;           /* Menempatkan gambar di sebelah kanan */
+    width: 809px;       /* Mengatur lebar gambar menjadi 100px */
+    height: auto;
+    position: absolute;
+   
+    margin-right: 100px;
+    z-index: -1; /* Agar gambar berada di bawah form */
+  }
+  
+  footer {
+    background: #fff;
+    color: black;
+    padding: 10px -10px;
+    text-align: left;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 180px;
+    margin: 10px;
+  }
+  
+  .footer-column h4 {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: black;
+  }
+  
+  .footer-column form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-column input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgb(193, 191, 191);
+    border: none;
+    color: black;
+  }
+  
+  .footer-column button[type="submit"] {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .footer-column button[type="submit"]:hover {
+    background: black;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #777;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  

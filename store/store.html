@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Page</title>
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-person"></i>
+            <i class="bi bi-cart"></i>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        Home / Store
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Filter By</h3>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <select>
+                    <option>MOBILE PHONES</option>
+                    <option>LAPTOPS</option>
+                    <option>TABLETS</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <h4>Availability</h4>
+                <label><input type="checkbox"> In Stock (1248)</label>
+                <label><input type="checkbox"> Out of Stock (1020)</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price</h4>
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="To">
+            </div>
+            <div class="filter-group">
+                <h4>Brand</h4>
+                <select>
+                    <option>SAMSUNG</option>
+                    <option>APPLE</option>
+                    <option>SONY</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <h4>Rating</h4>
+                <label><input type="checkbox"> 5★ & Above</label>
+                <label><input type="checkbox"> 4★ & Above</label>
+                <label><input type="checkbox"> 3★ & Above</label>
+            </div>
+            <div class="filter-group">
+                <h4>Discounts</h4>
+                <label><input type="checkbox"> 40% Or More</label>
+                <label><input type="checkbox"> 30% Or More</label>
+                <label><input type="checkbox"> 20% Or More</label>
+                <label><input type="checkbox"> 10% Or More</label>
+            </div>
+            <div class="filter-group">
+                <h4>Color</h4>
+                <div class="color-options">
+                    <div class="color-box" style="background-color: #f00;"></div>
+                    <div class="color-box" style="background-color: #00f;"></div>
+                    <div class="color-box" style="background-color: #0f0;"></div>
+                    <div class="color-box" style="background-color: #ff0;"></div>
+                    <div class="color-box" style="background-color: #0ff;"></div>
+                    <div class="color-box" style="background-color: #f0f;"></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Product Listing -->
+        <section class="product-listing">
+            <div class="product-header">
+                <div class="product-count">2210 PRODUCTS</div>
+                <div class="sort-by">
+                    <span>SORT BY</span>
+                    <select>
+                        <option>BEST SELLING</option>
+                        <option>PRICE: LOW TO HIGH</option>
+                        <option>PRICE: HIGH TO LOW</option>
+                    </select>
+                </div>
+                <div class="view-options">
+                    <i class="bi bi-grid-fill"></i>
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+            <div class="products grid-view">
+                <!-- Product Item -->
+                <div class="product-item">
+                    <div class="product-tag">SALE</div>
+                    <div class="product-actions"><i class="bi bi-heart"></i></div>
+                    <img src="image.png" alt="iPhone 15 Pro Max">
+                    <div class="product-details">
+                        <h4>₹1000</h4>
+                        <p>I Phone 15 Pro Max</p>
+                        <div class="product-rating">
+                            <span>4.4 ★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplicate the product item as necessary -->
+                <div class="product-item">
+                    <div class="product-tag">SALE</div>
+                    <div class="product-actions"><i class="bi bi-heart"></i></div>
+                    <img src="image.png" alt="iPhone 15 Pro Max">
+                    <div class="product-details">
+                        <h4>₹1000</h4>
+                        <p>I Phone 15 Pro Max</p>
+                        <div class="product-rating">
+                            <span>4.4 ★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional products can be added here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Important Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Service</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Let Us Help You</h4>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Subscribe For Updates And Exclusive Offers</h4>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Bytez. All Rights Reserved. Bytez Is Your Premier Online Source For The Latest In Technology Products, Providing Innovative, Quality, And Exceptional Customer Experiences Since Our Inception.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

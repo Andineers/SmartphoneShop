@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #383638 3%, #0b0b0b 49%);
+  font-family: Poppins;
+  background: linear-gradient(160deg, #383638 3%, #0b0b0b 39%);
   color: #fff;
   height: 100vh;
   display: flex;
@@ -9,22 +9,70 @@ body {
   justify-content: space-between;
 }
 
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 150px;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 0;
+}
+
+.name-logo img{
+  align-items: center;
+  margin-left: 60px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu li {
+  list-style: none;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.menu li a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: 600px;   
+  color: black;
+}
+
+.icons i {
+  font-size: 20px; 
+  margin-left: 15px; 
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 150px); /* Menyisakan ruang untuk footer */
+  height: calc(100vh - 100px); /* Menyisakan ruang untuk footer */
+  margin-left: 500px;
 }
 
-.login-container {
-  display: flex;
-  justify-content: space-between;
+.register-container {
+ 
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   width: 100%;
 }
 
-.login-form {
+.register-form {
   background: rgba(0, 0, 0, 0.7);
   padding: 40px;
   border-radius: 10px;
@@ -32,13 +80,13 @@ body {
   width: 100%;
 }
 
-.form-title h4 {
+.register-title h4 {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
 }
 
-.form-title p {
+.register-title p {
   margin-top: 10px;
   font-size: 16px;
   color: #ccc;
@@ -102,18 +150,21 @@ body {
 }
 
 .col-1 img {
-  width: 400px;
+ 
+  bottom: -209px;         
+  right: -98px;           /* Menempatkan gambar di sebelah kanan */
+  width: 809px;       /* Mengatur lebar gambar menjadi 100px */
   height: auto;
   position: absolute;
-  bottom: -100px; /* Adjust as needed */
-  right: 0;
+ 
+  margin-right: 100px;
   z-index: -1; /* Agar gambar berada di bawah form */
 }
 
 footer {
-  background: #0b0b0b;
-  color: #ccc;
-  padding: 40px 20px;
+  background: #fff;
+  color: black;
+  padding: 10px -10px;
   text-align: left;
 }
 
@@ -139,7 +190,7 @@ footer {
 }
 
 .footer-column h4 {
-  color: #fff;
+  color: black;
   font-size: 16px;
   margin-bottom: 20px;
   font-weight: bold;
@@ -156,12 +207,12 @@ footer {
 }
 
 .footer-column ul li a {
-  color: #ccc;
+  color: black;
   text-decoration: none;
 }
 
 .footer-column ul li a:hover {
-  color: #fff;
+  color: black;
 }
 
 .footer-column form {
@@ -172,15 +223,15 @@ footer {
 .footer-column input[type="email"] {
   padding: 10px;
   margin-bottom: 10px;
-  background: #383838;
+  background: rgb(193, 191, 191);
   border: none;
-  color: #fff;
+  color: black;
 }
 
 .footer-column button[type="submit"] {
   padding: 10px;
-  background: #fff;
-  color: #000;
+  background: black;
+  color: white;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -188,7 +239,7 @@ footer {
 }
 
 .footer-column button[type="submit"]:hover {
-  background: #ccc;
+  background: black;
 }
 
 .footer-bottom {
@@ -197,7 +248,7 @@ footer {
   background: #111;
   color: #777;
   font-size: 12px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .footer-bottom p {
