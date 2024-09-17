@@ -164,7 +164,31 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     border: none; /* Remove default border */
     border-radius: 8px; /* Rounded corners */
-    transition: transform 0.2s; Smooth transition for hover effect
+    transition: transform 0.2s Smooth transition for hover effect;
+}
+
+.colors {
+    display: flex;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.dot-black {
+    background-color: #000;
+}
+
+.dot-grey {
+    background-color: #555;
+}
+
+.dot-red {
+    background-color: #f00;
 }
 
 .custom-card:hover {
